@@ -1,0 +1,38 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light"
+  style="background-color: #6200ee !important"
+>
+  <a class="navbar-brand" href="#">Shrine</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<section class="pt-3">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <div
+          class="col-6 mb-5 card-css"
+          *ngFor="let details of imgData; let i = index"
+        >
+          <div class="card">
+            <img src="{{ details.url }}" alt="" class="shopping-img" />
+            <span class="p-md-3">
+              <b>{{ details.itemName }}</b>
+            </span>
+            <span class="p-md-3">${{ details.itemPrice }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
