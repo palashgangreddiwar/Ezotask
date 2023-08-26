@@ -1,0 +1,32 @@
+.area-color {
+  background-color: whitesmoke;
+}
+
+.inline {
+  display: flex;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+@media only screen and (max-width: 767px) {
+  .table-responsive {
+    display: table;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  h3 {
+    font-size: 17px !important;
+  }
+  h1 {
+    font-size: 25px !important;
+  }
+}
+
+.right-side-line::before {
+  content: "";
+  border-right: double;
+}

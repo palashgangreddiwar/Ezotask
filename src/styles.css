@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Urbanist-Regular;
+  src: url(../src/assets/Urbanist/static/Urbanist-Regular.ttf);
+}
+:root {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Urbanist-Regular;
+}
